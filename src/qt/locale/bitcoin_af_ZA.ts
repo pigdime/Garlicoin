@@ -214,8 +214,8 @@
         <translation>&amp;Opsies</translation>
     </message>
     <message>
-        <source>Garlicoin</source>
-        <translation>Garlicoin</translation>
+        <source>Bacoin</source>
+        <translation>Bacoin</translation>
     </message>
     <message>
         <source>Wallet</source>

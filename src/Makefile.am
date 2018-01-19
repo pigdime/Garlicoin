@@ -66,11 +66,11 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += garlicoind
+  bin_PROGRAMS += bacoind
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += garlicoin-cli garlicoin-tx
+  bin_PROGRAMS += bacoin-cli bacoin-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
@@ -370,16 +370,16 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-garlicoind_SOURCES = bitcoind.cpp
-garlicoind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-garlicoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-garlicoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+bacoind_SOURCES = bitcoind.cpp
+bacoind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+bacoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+bacoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-garlicoind_SOURCES += bitcoind-res.rc
+bacoind_SOURCES += bitcoind-res.rc
 endif
 
-garlicoind_LDADD = \
+bacoind_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBUNIVALUE) \
@@ -393,38 +393,38 @@ garlicoind_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-garlicoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+bacoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
 # bitcoin-cli binary #
-garlicoin_cli_SOURCES = bitcoin-cli.cpp
-garlicoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-garlicoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-garlicoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+bacoin_cli_SOURCES = bitcoin-cli.cpp
+bacoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+bacoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+bacoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-garlicoin_cli_SOURCES += bitcoin-cli-res.rc
+bacoin_cli_SOURCES += bitcoin-cli-res.rc
 endif
 
-garlicoin_cli_LDADD = \
+bacoin_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-garlicoin_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+bacoin_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
 # bitcoin-tx binary #
-garlicoin_tx_SOURCES = bitcoin-tx.cpp
-garlicoin_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-garlicoin_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-garlicoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+bacoin_tx_SOURCES = bitcoin-tx.cpp
+bacoin_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+bacoin_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+bacoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-garlicoin_tx_SOURCES += bitcoin-tx-res.rc
+bacoin_tx_SOURCES += bitcoin-tx-res.rc
 endif
 
-garlicoin_tx_LDADD = \
+bacoin_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -432,7 +432,7 @@ garlicoin_tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-garlicoin_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+bacoin_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #

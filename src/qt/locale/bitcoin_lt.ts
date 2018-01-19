@@ -162,8 +162,8 @@
         <translation>Blokai iš naujo indeksuojami...</translation>
     </message>
     <message>
-        <source>Send coins to a Garlicoin address</source>
-        <translation>Siųsti monetas Garlicoin adresui</translation>
+        <source>Send coins to a Bacoin address</source>
+        <translation>Siųsti monetas Bacoin adresui</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -186,8 +186,8 @@
         <translation>&amp;Tikrinti žinutę...</translation>
     </message>
     <message>
-        <source>Garlicoin</source>
-        <translation>Garlicoin</translation>
+        <source>Bacoin</source>
+        <translation>Bacoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -432,8 +432,8 @@
         <translation>Piniginė</translation>
     </message>
     <message>
-        <source>Automatically open the Garlicoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatiškai atidaryti Garlicoin kliento prievadą maršrutizatoriuje. Tai veikia tik tada, kai jūsų maršrutizatorius palaiko UPnP ir ji įjungta.</translation>
+        <source>Automatically open the Bacoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatiškai atidaryti Bacoin kliento prievadą maršrutizatoriuje. Tai veikia tik tada, kai jūsų maršrutizatorius palaiko UPnP ir ji įjungta.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -865,7 +865,7 @@
         <translation>Įveskite pranešimą, kurį norite pasirašyti čia</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Garlicoin address</source>
+        <source>Sign the message to prove you own this Bacoin address</source>
         <translation>Registruotis žinute įrodymuii, kad turite šį adresą</translation>
     </message>
     <message>
@@ -881,8 +881,8 @@
         <translation>&amp;Patikrinti žinutę</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Garlicoin address</source>
-        <translation>Patikrinkite žinutę, jog įsitikintumėte, kad ją pasirašė nurodytas Garlicoin adresas</translation>
+        <source>Verify the message to ensure it was signed with the specified Bacoin address</source>
+        <translation>Patikrinkite žinutę, jog įsitikintumėte, kad ją pasirašė nurodytas Bacoin adresas</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -958,8 +958,8 @@
         <translation>Dirbti fone kaip šešėlyje ir priimti komandas</translation>
     </message>
     <message>
-        <source>Garlicoin Core</source>
-        <translation>Garlicoin branduolys</translation>
+        <source>Bacoin Core</source>
+        <translation>Bacoin branduolys</translation>
     </message>
     <message>
         <source>Error opening block database</source>

@@ -154,8 +154,8 @@
         <translation>Newid y cyfrinymadrodd a ddefnyddiwyd ar gyfer amgryptio'r waled</translation>
     </message>
     <message>
-        <source>Garlicoin</source>
-        <translation>Garlicoin</translation>
+        <source>Bacoin</source>
+        <translation>Bacoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -640,8 +640,8 @@
         <translation>Opsiynau:</translation>
     </message>
     <message>
-        <source>Garlicoin Core</source>
-        <translation>Craidd Garlicoin</translation>
+        <source>Bacoin Core</source>
+        <translation>Craidd Bacoin</translation>
     </message>
     <message>
         <source>Information</source>

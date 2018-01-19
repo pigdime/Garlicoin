@@ -785,7 +785,7 @@ void SendCoinsDialog::coinControlChangeEdited(const QString& text)
         }
         else if (!addr.IsValid()) // Invalid address
         {
-            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid Garlicoin address"));
+            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid Bacoin address"));
         }
         else // Valid address
         {
