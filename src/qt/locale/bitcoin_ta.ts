@@ -90,8 +90,8 @@
         <translation>&amp;செய்தியை சரிசெய்...</translation>
     </message>
     <message>
-        <source>Garlicoin</source>
-        <translation>Garlicoin</translation>
+        <source>Bacoin</source>
+        <translation>Bacoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -708,8 +708,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Garlicoin Core</source>
-        <translation>Garlicoin மையம்</translation>
+        <source>Bacoin Core</source>
+        <translation>Bacoin மையம்</translation>
     </message>
     <message>
         <source>(default: %u)</source>

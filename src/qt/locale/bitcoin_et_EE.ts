@@ -130,8 +130,8 @@
         <translation>Kõvakettal olevate plokkide reindekseerimine...</translation>
     </message>
     <message>
-        <source>Garlicoin</source>
-        <translation>Garlicoin</translation>
+        <source>Bacoin</source>
+        <translation>Bacoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -760,8 +760,8 @@
         <translation>Valikud:</translation>
     </message>
     <message>
-        <source>Garlicoin Core</source>
-        <translation>Garlicoin Core</translation>
+        <source>Bacoin Core</source>
+        <translation>Bacoin Core</translation>
     </message>
     <message>
         <source>Information</source>

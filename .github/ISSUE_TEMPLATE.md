@@ -1,10 +1,10 @@
 <!--- Remove sections that do not apply -->
 
-This issue tracker is only for technical issues related to garlicoin-core.
+This issue tracker is only for technical issues related to bacoin-core.
 
-General garlicoin questions and/or support requests and are best directed to the [garlicointalk.io forums](https://garlicointalk.io/).
+General bacoin questions and/or support requests and are best directed to the [bacointalk.io forums](https://bacointalk.io/).
 
-For reporting security issues, please contact the Garlicoin developers on the #garlicoin-dev Freenode IRC channel or alternatively you can email us at contact@garlicoin.org.
+For reporting security issues, please contact the Bacoin developers on the #bacoin-dev Freenode IRC channel or alternatively you can email us at contact@bacoin.org.
 
 ### Describe the issue
 
@@ -23,7 +23,7 @@ Tell us what happens instead
 ### Screenshots.
 If the issue is related to the GUI, screenshots can be added to this issue via drag & drop.
 
-### What version of garlicoin-core are you using?
+### What version of bacoin-core are you using?
 List the version number/commit ID, and if it is an official binary, self compiled or a distribution package such as PPA.
 
 ### Machine specs:

@@ -32,6 +32,10 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
     genesis.vtx.push_back(MakeTransactionRef(std::move(txNew)));
     genesis.hashPrevBlock.SetNull();
     genesis.hashMerkleRoot = BlockMerkleRoot(genesis);
+    printf("block.nTime = %u \n", genesis.nTime);
+    printf("block.nNonce = %u \n", genesis.nNonce);
+    printf("block.GetHash = %s\n", genesis.GetHash().ToString().c_str());
+    printf("block.MerkleRoot = %s\n", genesis.hashMerkleRoot.ToString().c_str());
     return genesis;
 }
 
@@ -48,7 +52,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "1/3/18 This is the testnet";
+    const char* pszTimestamp = "1/19/18 This is the bacoin testnet";
     const CScript genesisOutputScript = CScript() << ParseHex("696984710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
@@ -120,15 +124,15 @@ public:
 
         // ToDo: first argument is epoch time. change to time of release for genesis block on alpha release.
         // second argument is nNonce, will be generated later. 0 for now. Reminder to change both these
-        genesis = CreateGenesisBlock(1515002093, 3606002, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1516417371, 0, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x"));
         assert(genesis.hashMerkleRoot == uint256S("0x"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
-        vSeeds.emplace_back("185.185.126.143", true);
+        vSeeds.emplace_back("main dns", true);
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,38);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,55);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
         base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,50);
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,176);
@@ -205,15 +209,17 @@ public:
 
         // ToDo: first argument is epoch time. change to time of release for genesis block on alpha release.
         // second argument is nNonce, will be generated later. 0 for now. Reminder to change both these
-        genesis = CreateGenesisBlock(1515002093, 3606002, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1516490585, 2535572212, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0xe99da841b29de092a847214f1af5abf6ef38a50f607081b09692177555e5855e"));
-        assert(genesis.hashMerkleRoot == uint256S("0xc33614a63c5382f71967c273f8f573faa5b09ed87620ea89504982118bd5e5b5"));
+        assert(consensus.hashGenesisBlock == uint256S("0x1bf0dd449f51a77664334884cce7d61cbeb775efadbce1b2cc4de9607e163dca"));
+        //assert(consensus.hashGenesisBlock == uint256S("0x000000002268ceadbeb958a10308665003ebd5ca04b733cf522dff64285d64dd"));
+        assert(genesis.hashMerkleRoot == uint256S("0xbf6bcef37fe10530339a69132a3bf7ceeb012df43f4d6b48f9d3f2e33cf410a2"));
+        //assert(genesis.hashMerkleRoot == uint256S("0xa194065c690e602fea8e433232b0f60dd9d4f0ba0bef2af0a2f432d48bae5623"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.emplace_back("dnsseed.brennanmcdonald.io", true);
+        vSeeds.emplace_back("testnet seed", true);
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
@@ -230,20 +236,19 @@ public:
 
         checkpointData = (CCheckpointData) {
             {
-                {0, uint256S("0xe99da841b29de092a847214f1af5abf6ef38a50f607081b09692177555e5855e")},
+                {0, uint256S("0x1bf0dd449f51a77664334884cce7d61cbeb775efadbce1b2cc4de9607e163dca")},
             }
         };
 
         chainTxData = ChainTxData{
             // Data as of block 3351b6229da00b47ad7a8d7e1323b0e2874744b5296e3d6448293463ab758624 (height 153489)
-            1515002093,
+            1516490585,
             1,
             0.00
         };
 
     }
 };
-
 /**
  * Regression test
  */
@@ -287,15 +292,15 @@ public:
         nPruneAfterHeight = 1000;
 
         //todo: first argument is current epoch time. this should be epoch time of alpha release, to be fair. change later
-        genesis = CreateGenesisBlock(1515002093, 3606002, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1516417371, 0, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0xe99da841b29de092a847214f1af5abf6ef38a50f607081b09692177555e5855e"));
-        assert(genesis.hashMerkleRoot == uint256S("0xc33614a63c5382f71967c273f8f573faa5b09ed87620ea89504982118bd5e5b5"));
+        assert(consensus.hashGenesisBlock == uint256S("0x4c5683bec798975e9c46757f6a168257f240e65b3cf5312a9233a2fa7331cc77"));
+        assert(genesis.hashMerkleRoot == uint256S("0xa194065c690e602fea8e433232b0f60dd9d4f0ba0bef2af0a2f432d48bae5623"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
 
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
-	vSeeds.emplace_back("dnsseed.brennanmcdonald.io", true);
+	vSeeds.emplace_back("REG TEST DNS", true);
 
         fDefaultConsistencyChecks = true;
         fRequireStandard = false;
@@ -308,9 +313,9 @@ public:
         };
 
         chainTxData = ChainTxData{
-            1515002093,
-            1,
-            0
+            //1515002093,
+            //1,
+            //0
         };
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);

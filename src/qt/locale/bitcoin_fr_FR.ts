@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Choisissez une adresse où envoyer les garlicoins</translation>
+        <translation>Choisissez une adresse où envoyer les bacoins</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Choisissez une adresse où recevoir les garlicoins</translation>
+        <translation>Choisissez une adresse où recevoir les bacoins</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -128,8 +128,8 @@
         <translation>Décrypter le porte-monnaie</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GARLICOINS&lt;/b&gt;!</source>
-        <translation>Attention : Si vous chiffrez votre portefeuille et que vous perdez votre mot de passe vous &lt;b&gt; PERDREZ TOUS VOS GARLICOINS&lt;/b&gt; !</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BACOINS&lt;/b&gt;!</source>
+        <translation>Attention : Si vous chiffrez votre portefeuille et que vous perdez votre mot de passe vous &lt;b&gt; PERDREZ TOUS VOS BACOINS&lt;/b&gt; !</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -238,8 +238,8 @@
         <translation>Réindexer les blocs sur le disque...</translation>
     </message>
     <message>
-        <source>Send coins to a Garlicoin address</source>
-        <translation>Envoyer des pièces à une adresse Garlicoin</translation>
+        <source>Send coins to a Bacoin address</source>
+        <translation>Envoyer des pièces à une adresse Bacoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -262,8 +262,8 @@
         <translation>&amp;Vérification du message</translation>
     </message>
     <message>
-        <source>Garlicoin</source>
-        <translation>Garlicoin</translation>
+        <source>Bacoin</source>
+        <translation>Bacoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -290,8 +290,8 @@
         <translation>Crypter les clé privées qui appartiennent votre portefeuille</translation>
     </message>
     <message>
-        <source>Sign messages with your Garlicoin addresses to prove you own them</source>
-        <translation>Signer vos messages avec vos adresses Garlicoin pour prouver que vous les détenez</translation>
+        <source>Sign messages with your Bacoin addresses to prove you own them</source>
+        <translation>Signer vos messages avec vos adresses Bacoin pour prouver que vous les détenez</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -310,24 +310,24 @@
         <translation>Barre d'outils des onglets</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and garlicoin: URIs)</source>
-        <translation>Demander des paiements (générer QR codes et garlicoin: URIs)</translation>
+        <source>Request payments (generates QR codes and bacoin: URIs)</source>
+        <translation>Demander des paiements (générer QR codes et bacoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
         <translation>Montrer la liste des adresses d'envois utilisées et les étiquettes</translation>
     </message>
     <message>
-        <source>Open a garlicoin: URI or payment request</source>
-        <translation>Ouvrir un garlicoin: URI ou demande de paiement</translation>
+        <source>Open a bacoin: URI or payment request</source>
+        <translation>Ouvrir un bacoin: URI ou demande de paiement</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Options de ligne de commande</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Garlicoin network</source>
-        <translation><numerusform>%n connexion active au réseau Garlicoin</numerusform><numerusform>%n connexions actives au réseau Garlicoin</numerusform></translation>
+        <source>%n active connection(s) to Bacoin network</source>
+        <translation><numerusform>%n connexion active au réseau Bacoin</numerusform><numerusform>%n connexions actives au réseau Bacoin</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -712,8 +712,8 @@
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically open the Garlicoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ouvrir le port du client Garlicoin automatiquement sur le routeur. Cela ne fonctionne que si votre routeur supporte l'UPnP et si la fonctionnalité est activée.</translation>
+        <source>Automatically open the Bacoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ouvrir le port du client Bacoin automatiquement sur le routeur. Cela ne fonctionne que si votre routeur supporte l'UPnP et si la fonctionnalité est activée.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -872,8 +872,8 @@
         <translation>Montant</translation>
     </message>
     <message>
-        <source>Enter a Garlicoin address (e.g. %1)</source>
-        <translation>Entrer une adresse Garlicoin (e.g. %1)</translation>
+        <source>Enter a Bacoin address (e.g. %1)</source>
+        <translation>Entrer une adresse Bacoin (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1734,8 +1734,8 @@
         <translation>Impossible de démarrer le serveur HTTP. Voir le journal de débogage pour plus de détails.</translation>
     </message>
     <message>
-        <source>Garlicoin Core</source>
-        <translation>Garlicoin Core</translation>
+        <source>Bacoin Core</source>
+        <translation>Bacoin Core</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>

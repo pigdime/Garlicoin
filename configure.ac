@@ -7,17 +7,17 @@ define(_CLIENT_VERSION_BUILD, 1)
 define(_CLIENT_VERSION_IS_RELEASE, true)
 define(_COPYRIGHT_YEAR, 2017)
 define(_COPYRIGHT_HOLDERS,[The %s developers])
-define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Garlicoin Core]])
-AC_INIT([Garlicoin Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/garlicoin-project/garlicoin/issues],[garlicoin],[https://garlicoin.org/])
+define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Bacoin Core]])
+AC_INIT([Bacoin Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/bacoin-project/bacoin/issues],[bacoin],[https://bacoin.org/])
 AC_CONFIG_SRCDIR([src/validation.cpp])
 AC_CONFIG_HEADERS([src/config/bitcoin-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
-BITCOIN_DAEMON_NAME=garlicoind
-BITCOIN_GUI_NAME=garlicoin-qt
-BITCOIN_CLI_NAME=garlicoin-cli
-BITCOIN_TX_NAME=garlicoin-tx
+BITCOIN_DAEMON_NAME=bacoind
+BITCOIN_GUI_NAME=bacoin-qt
+BITCOIN_CLI_NAME=bacoin-cli
+BITCOIN_TX_NAME=bacoin-tx
 
 dnl Unless the user specified ARFLAGS, force it to be cr
 AC_ARG_VAR(ARFLAGS, [Flags for the archiver, defaults to <cr> if not set])
@@ -1036,11 +1036,11 @@ AC_SUBST(UNIVALUE_LIBS)
 
 BITCOIN_QT_PATH_PROGS([PROTOC], [protoc],$protoc_bin_path)
 
-AC_MSG_CHECKING([whether to build garlicoind])
+AC_MSG_CHECKING([whether to build bacoind])
 AM_CONDITIONAL([BUILD_BITCOIND], [test x$build_bitcoind = xyes])
 AC_MSG_RESULT($build_bitcoind)
 
-AC_MSG_CHECKING([whether to build utils (garlicoin-cli garlicoin-tx)])
+AC_MSG_CHECKING([whether to build utils (bacoin-cli bacoin-tx)])
 AM_CONDITIONAL([BUILD_BITCOIN_UTILS], [test x$build_bitcoin_utils = xyes])
 AC_MSG_RESULT($build_bitcoin_utils)
 
@@ -1141,7 +1141,7 @@ if test x$bitcoin_enable_qt != xno; then
     AC_MSG_WARN("xgettext is required to update qt translations")
   fi
 
-  AC_MSG_CHECKING([whether to build test_garlicoin-qt])
+  AC_MSG_CHECKING([whether to build test_bacoin-qt])
   if test x$use_gui_tests$bitcoin_enable_qt_test = xyesyes; then
     AC_MSG_RESULT([yes])
     BUILD_TEST_QT="yes"
@@ -1152,7 +1152,7 @@ fi
 
 AM_CONDITIONAL([ENABLE_ZMQ], [test "x$use_zmq" = "xyes"])
 
-AC_MSG_CHECKING([whether to build test_garlicoin])
+AC_MSG_CHECKING([whether to build test_bacoin])
 if test x$use_tests = xyes; then
   AC_MSG_RESULT([yes])
   BUILD_TEST="yes"

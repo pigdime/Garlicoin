@@ -50,7 +50,7 @@
 #include <boost/thread.hpp>
 
 #if defined(NDEBUG)
-# error "Garlicoin cannot be compiled without assertions."
+# error "Bacoin cannot be compiled without assertions."
 #endif
 
 /**
@@ -92,7 +92,7 @@ static void CheckBlockIndex(const Consensus::Params& consensusParams);
 /** Constant stuff for coinbase transactions we create: */
 CScript COINBASE_FLAGS;
 
-const std::string strMessageMagic = "Garlicoin Signed Message:\n";
+const std::string strMessageMagic = "Bacoin Signed Message:\n";
 
 // Internal stuff
 namespace {

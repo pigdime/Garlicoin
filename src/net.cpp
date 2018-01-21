@@ -1483,7 +1483,7 @@ void ThreadMapPort()
             }
         }
 
-        std::string strDesc = "Garlicoin " + FormatFullVersion();
+        std::string strDesc = "Bacoin " + FormatFullVersion();
 
         try {
             while (true) {

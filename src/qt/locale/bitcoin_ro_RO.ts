@@ -54,12 +54,12 @@
         <translation>Adresa de primire</translation>
     </message>
     <message>
-        <source>These are your Garlicoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Acestea sunt adresele tale Garlicoin pentru efectuarea platilor. Intotdeauna verifica atent suma de plata si adresa beneficiarului inainte de a trimite monede.</translation>
+        <source>These are your Bacoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Acestea sunt adresele tale Bacoin pentru efectuarea platilor. Intotdeauna verifica atent suma de plata si adresa beneficiarului inainte de a trimite monede.</translation>
     </message>
     <message>
-        <source>These are your Garlicoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Acestea sunt adresele tale Garlicoin pentru receptionarea platilor. Este recomandat sa folosesti mereu o adresa noua pentru primirea platilor.</translation>
+        <source>These are your Bacoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Acestea sunt adresele tale Bacoin pentru receptionarea platilor. Este recomandat sa folosesti mereu o adresa noua pentru primirea platilor.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -230,8 +230,8 @@
         <translation>Se reindexează blocurile pe disc...</translation>
     </message>
     <message>
-        <source>Send coins to a Garlicoin address</source>
-        <translation>Trimite monede către o adresă Garlicoin</translation>
+        <source>Send coins to a Bacoin address</source>
+        <translation>Trimite monede către o adresă Bacoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -254,8 +254,8 @@
         <translation>&amp;Verifică mesaj...</translation>
     </message>
     <message>
-        <source>Garlicoin</source>
-        <translation>Garlicoin</translation>
+        <source>Bacoin</source>
+        <translation>Bacoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -282,12 +282,12 @@
         <translation>Criptează cheile private ale portofelului dvs.</translation>
     </message>
     <message>
-        <source>Sign messages with your Garlicoin addresses to prove you own them</source>
-        <translation>Semnaţi mesaje cu adresa dvs. Garlicoin pentru a dovedi că vă aparţin</translation>
+        <source>Sign messages with your Bacoin addresses to prove you own them</source>
+        <translation>Semnaţi mesaje cu adresa dvs. Bacoin pentru a dovedi că vă aparţin</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Garlicoin addresses</source>
-        <translation>Verificaţi mesaje pentru a vă asigura că au fost semnate cu adresa Garlicoin specificată</translation>
+        <source>Verify messages to ensure they were signed with specified Bacoin addresses</source>
+        <translation>Verificaţi mesaje pentru a vă asigura că au fost semnate cu adresa Bacoin specificată</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -306,8 +306,8 @@
         <translation>Bara de unelte</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and garlicoin: URIs)</source>
-        <translation>Cereţi plăţi (generează coduri QR şi garlicoin-uri: URls)</translation>
+        <source>Request payments (generates QR codes and bacoin: URIs)</source>
+        <translation>Cereţi plăţi (generează coduri QR şi bacoin-uri: URls)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -318,16 +318,16 @@
         <translation>Arată lista de adrese pentru primire şi etichetele</translation>
     </message>
     <message>
-        <source>Open a garlicoin: URI or payment request</source>
-        <translation>Deschidere garlicoin: o adresa URI sau o cerere de plată</translation>
+        <source>Open a bacoin: URI or payment request</source>
+        <translation>Deschidere bacoin: o adresa URI sau o cerere de plată</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Opţiuni linie de &amp;comandă</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Garlicoin network</source>
-        <translation><numerusform>%n conexiune activă către reţeaua Garlicoin</numerusform><numerusform>%n conexiuni active către reţeaua Garlicoin</numerusform><numerusform>%n de conexiuni active către reţeaua Garlicoin</numerusform></translation>
+        <source>%n active connection(s) to Bacoin network</source>
+        <translation><numerusform>%n conexiune activă către reţeaua Bacoin</numerusform><numerusform>%n conexiuni active către reţeaua Bacoin</numerusform><numerusform>%n de conexiuni active către reţeaua Bacoin</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
@@ -732,16 +732,16 @@
         <translation>Cheltuire rest neconfirmat</translation>
     </message>
     <message>
-        <source>Automatically open the Garlicoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Deschide automat în router portul aferent clientului Garlicoin. Funcţionează doar dacă routerul duportă UPnP şi e activat.</translation>
+        <source>Automatically open the Bacoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Deschide automat în router portul aferent clientului Bacoin. Funcţionează doar dacă routerul duportă UPnP şi e activat.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Mapare port folosind &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Garlicoin network through a SOCKS5 proxy.</source>
-        <translation>Conectare la reţeaua Garlicoin printr-un proxy SOCKS.</translation>
+        <source>Connect to the Bacoin network through a SOCKS5 proxy.</source>
+        <translation>Conectare la reţeaua Bacoin printr-un proxy SOCKS.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -801,7 +801,7 @@
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Alegeţi subdiviziunea folosită la afişarea interfeţei şi la trimiterea de garlicoin.</translation>
+        <translation>Alegeţi subdiviziunea folosită la afişarea interfeţei şi la trimiterea de bacoin.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -841,7 +841,7 @@
     </message>
     <message>
         <source>The supplied proxy address is invalid.</source>
-        <translation>Adresa garlicoin pe care aţi specificat-o nu este validă.</translation>
+        <translation>Adresa bacoin pe care aţi specificat-o nu este validă.</translation>
     </message>
 </context>
 <context>
@@ -851,8 +851,8 @@
         <translation>Form</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Garlicoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Informaţiile afişate pot fi neactualizate. Portofelul dvs. se sincronizează automat cu reţeaua Garlicoin după ce o conexiune este stabilită, dar acest proces nu a fost finalizat încă.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bacoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Informaţiile afişate pot fi neactualizate. Portofelul dvs. se sincronizează automat cu reţeaua Bacoin după ce o conexiune este stabilită, dar acest proces nu a fost finalizat încă.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -940,8 +940,8 @@
         <translation>Cantitate</translation>
     </message>
     <message>
-        <source>Enter a Garlicoin address (e.g. %1)</source>
-        <translation>Introduceţi o adresă Garlicoin (de exemplu %1)</translation>
+        <source>Enter a Bacoin address (e.g. %1)</source>
+        <translation>Introduceţi o adresă Bacoin (de exemplu %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1240,8 +1240,8 @@
         <translation>R&amp;efoloseşte o adresă de primire (nu este recomandat)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Garlicoin network.</source>
-        <translation>Un mesaj opţional de ataşat la cererea de plată, care va fi afişat cînd cererea este deschisă. Notă: Acest mesaj nu va fi trimis cu plata către reţeaua Garlicoin.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bacoin network.</source>
+        <translation>Un mesaj opţional de ataşat la cererea de plată, care va fi afişat cînd cererea este deschisă. Notă: Acest mesaj nu va fi trimis cu plata către reţeaua Bacoin.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1472,8 +1472,8 @@
         <translation>Aceasta este o tranzacţie normală.</translation>
     </message>
     <message>
-        <source>The Garlicoin address to send the payment to</source>
-        <translation>Adresa garlicoin către care se face plata</translation>
+        <source>The Bacoin address to send the payment to</source>
+        <translation>Adresa bacoin către care se face plata</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1500,8 +1500,8 @@
         <translation>Introduceţi eticheta pentru ca această adresa să fie introdusă în lista de adrese folosite</translation>
     </message>
     <message>
-        <source>A message that was attached to the garlicoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Garlicoin network.</source>
-        <translation>un mesaj a fost ataşat la garlicoin: URI care va fi stocat cu tranzacţia pentru referinţa dvs. Notă: Acest mesaj nu va fi trimis către reţeaua garlicoin.</translation>
+        <source>A message that was attached to the bacoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bacoin network.</source>
+        <translation>un mesaj a fost ataşat la bacoin: URI care va fi stocat cu tranzacţia pentru referinţa dvs. Notă: Acest mesaj nu va fi trimis către reţeaua bacoin.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -1537,7 +1537,7 @@
         <translation>&amp;Semnează mesaj</translation>
     </message>
     <message>
-        <source>The Garlicoin address to sign the message with</source>
+        <source>The Bacoin address to sign the message with</source>
         <translation>Adresa cu care semnaţi mesajul</translation>
     </message>
     <message>
@@ -1569,8 +1569,8 @@
         <translation>Copiază semnatura curentă în clipboard-ul sistemului</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Garlicoin address</source>
-        <translation>Semnează mesajul pentru a dovedi ca deţineţi acestă adresă Garlicoin</translation>
+        <source>Sign the message to prove you own this Bacoin address</source>
+        <translation>Semnează mesajul pentru a dovedi ca deţineţi acestă adresă Bacoin</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1589,12 +1589,12 @@
         <translation>&amp;Verifică mesaj</translation>
     </message>
     <message>
-        <source>The Garlicoin address the message was signed with</source>
-        <translation>Introduceţi o adresă Garlicoin</translation>
+        <source>The Bacoin address the message was signed with</source>
+        <translation>Introduceţi o adresă Bacoin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Garlicoin address</source>
-        <translation>Verificaţi mesajul pentru a vă asigura că a fost semnat cu adresa Garlicoin specificată</translation>
+        <source>Verify the message to ensure it was signed with the specified Bacoin address</source>
+        <translation>Verificaţi mesajul pentru a vă asigura că a fost semnat cu adresa Bacoin specificată</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1702,8 +1702,8 @@
         <translation>Rulează în fundal ca un demon şi acceptă comenzi</translation>
     </message>
     <message>
-        <source>Garlicoin Core</source>
-        <translation>Nucleul Garlicoin</translation>
+        <source>Bacoin Core</source>
+        <translation>Nucleul Bacoin</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
