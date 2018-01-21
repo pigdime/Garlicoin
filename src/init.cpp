@@ -525,8 +525,8 @@ std::string HelpMessage(HelpMessageMode mode)
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/bacoin-project/bacoin>";
-    const std::string URL_WEBSITE = "<https://bacoin.org>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/pigdime/bacoin>";
+    const std::string URL_WEBSITE = "<https://bacoin.io>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2011, COPYRIGHT_YEAR) + " ") + "\n" +
            "\n" +
