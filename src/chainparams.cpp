@@ -35,6 +35,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
     printf("block.nTime = %u \n", genesis.nTime);
     printf("block.nNonce = %u \n", genesis.nNonce);
     printf("block.GetHash = %s\n", genesis.GetHash().ToString().c_str());
+    printf("block.GetPoWHash = %s\n", genesis.GetPoWHash().ToString().c_str());
     printf("block.MerkleRoot = %s\n", genesis.hashMerkleRoot.ToString().c_str());
     return genesis;
 }
@@ -174,8 +175,8 @@ public:
         consensus.BIP65Height = 76; // 8075c771ed8b495ffd943980a95f702ab34fce3c8c54e379548bda33cc8c0573
         consensus.BIP66Height = 76; // 8075c771ed8b495ffd943980a95f702ab34fce3c8c54e379548bda33cc8c0573
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
-        consensus.nPowTargetTimespan = 1.4 * 24 * 60 * 60; // 1.4 days
-        consensus.nPowTargetSpacing = 1 * 60; // 60 seconds
+        consensus.nPowTargetTimespan = 60 * 60; // every hour - irrelevant due to DGW
+        consensus.nPowTargetSpacing = 40; // 40 seconds
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1512; // 75% for testchains
@@ -209,12 +210,10 @@ public:
 
         // ToDo: first argument is epoch time. change to time of release for genesis block on alpha release.
         // second argument is nNonce, will be generated later. 0 for now. Reminder to change both these
-        genesis = CreateGenesisBlock(1516490585, 2535572212, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1516490585, 762751, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x1bf0dd449f51a77664334884cce7d61cbeb775efadbce1b2cc4de9607e163dca"));
-        //assert(consensus.hashGenesisBlock == uint256S("0x000000002268ceadbeb958a10308665003ebd5ca04b733cf522dff64285d64dd"));
+        assert(consensus.hashGenesisBlock == uint256S("0x44974e474ff19d0b43d53692009aeac9e91e3d7e9d818a00eb80a79eb4ad7cf7"));
         assert(genesis.hashMerkleRoot == uint256S("0xbf6bcef37fe10530339a69132a3bf7ceeb012df43f4d6b48f9d3f2e33cf410a2"));
-        //assert(genesis.hashMerkleRoot == uint256S("0xa194065c690e602fea8e433232b0f60dd9d4f0ba0bef2af0a2f432d48bae5623"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -236,7 +235,7 @@ public:
 
         checkpointData = (CCheckpointData) {
             {
-                {0, uint256S("0x1bf0dd449f51a77664334884cce7d61cbeb775efadbce1b2cc4de9607e163dca")},
+                {0, uint256S("0x44974e474ff19d0b43d53692009aeac9e91e3d7e9d818a00eb80a79eb4ad7cf7")},
             }
         };
 

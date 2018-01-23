@@ -1000,6 +1000,14 @@ bool ReadBlockFromDisk(CBlock& block, const CDiskBlockPos& pos, const Consensus:
         return error("%s: Deserialize or I/O error - %s at %s", __func__, e.what(), pos.ToString());
     }
 
+    //block.nNonce = 0;
+
+    //printf("Reset block.nNonce to %d\n", block.nNonce);
+
+    //while (!CheckProofOfWork(block.GetPoWHash(), block.nBits, consensusParams)) block.nNonce++;
+
+    printf("Block=%s\n", block.ToString().c_str());
+
     // Check the header
     if (!CheckProofOfWork(block.GetPoWHash(), block.nBits, consensusParams))
         return error("ReadBlockFromDisk: Errors in block header at %s", pos.ToString());
